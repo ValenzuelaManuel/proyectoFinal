@@ -1,0 +1,28 @@
+.productos{
+    font-size: 2rem;
+    overflow: hidden;
+    img{
+        width: 100%;
+    }
+    &__aros{
+        display: flex;
+        justify-content: space-around;
+        gap: 10rem; 
+        padding: 5rem;
+    }
+    &__anillos{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10rem; 
+        padding: 5rem;
+    }
+    &__collares{
+        display: flex;
+        gap: 10rem; 
+        padding: 5rem;
+    }
+    &__collarizq{
+        align-self: center;
+    }
+}
