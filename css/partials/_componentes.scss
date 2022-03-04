@@ -1,0 +1,115 @@
+@import "./variables";
+.form {
+    border: 1px solid #f1f1f1;
+    box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+    font-size: medium;
+}
+  
+.form-check-input:checked {
+      background-color: $gris;
+      border-color: $gris;
+      }
+  input[type="submit"]{
+      color: $negro;
+      border-color: $negro;
+    }
+    input[type="submit"]:hover,
+    input[type="submit"]:focus {
+      color: $blanco;
+      background-color: $dorado;
+      outline: none;
+      box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+}
+
+.grilla{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 5rem;
+      gap: 2rem;
+}
+.parrafo{
+      font-size: 2rem;
+      padding: 1rem 5rem;
+}
+  
+.titulo{ 
+      display: flex;
+      justify-content: flex-start;
+      padding: 4rem;
+      font-size: 5rem;
+}
+.subtitulo{
+      display: flex;
+      justify-content: center;
+      font-size: 3rem;
+      padding: 1rem;
+}
+.principal{
+      color: $gris;
+      margin: auto;
+      width: 60%;
+      font-size: 2rem;
+}
+  
+.categorias{
+      display: flex;
+      gap: 5rem;
+      padding: 2rem;
+      img{
+        width: 100%;
+      }
+}
+  
+.tabla{
+      margin-bottom: 5rem;
+}
+.gunelve{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 10rem; 
+      padding: 5rem;
+      img{
+        width: 100%;
+      }
+      &__izq{
+      border-top: 5px solid $gris;
+      border-left: 5px solid $gris;
+      }
+      &__der{
+      @extend .gunelve__izq;
+      border-right: 5px solid $dorado;
+      border-bottom: 5px solid $dorado;
+      }
+      
+      
+}
+$bordes: (
+      "delgado": 5px solid #000000, "grueso": 8px solid #000000);
+
+.porvenir{
+
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 10rem; 
+      padding: 5rem;
+      img{
+        width: 100%;
+      }
+      &__izq{
+            border: map-get($bordes, "delgado")
+      }
+      &__der{
+            border: map-get($bordes, "grueso")
+      }
+}
+
+
+  
+.banner__img{
+      width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+}
+  
