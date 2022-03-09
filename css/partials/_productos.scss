@@ -1,0 +1,22 @@
+@import "./variables";
+@mixin flex-g10-p5{
+    display: flex;
+    gap: 10rem; 
+    padding: 5rem;
+}
+.productos{
+    font-size: 2rem;
+    overflow: hidden;
+    img{
+        width: 100%;
+    }
+    &__aros{
+    @include flex-g10-p5;   
+    }
+    &__anillos{
+    @include flex-g10-p5;
+    }
+    &__collares{
+    @include flex-g10-p5;
+    }
+}
