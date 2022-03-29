@@ -1,0 +1,21 @@
+@import "./variables";
+.footer{
+    color: $blanco;
+    background: $gris;
+    font-size: 1.5rem;
+    display: flex;
+    &__div{
+        padding: 3rem 3rem 3rem 3rem;
+    }
+    &__links{
+    list-style: none;
+    }
+
+    &__texto{
+    line-height: 4rem;
+    
+    }
+    a{
+        color: $blanco;
+    }
+}
